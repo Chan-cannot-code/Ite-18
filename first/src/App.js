@@ -6,9 +6,11 @@ import Logout from "./components/Logout";
 import { ToastContainer, toast } from "react-toastify";
 
 
+
 function App() {
   const notify = () => toast("ez");
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +20,8 @@ function App() {
       </Routes>
       <ToastContainer />
     </Router>
-    
+
+    </>
   );
 };
 

@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { Col, Button, FormGroup, Input, Row, Toast } from "reactstrap";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import Particle from "../Particle";
+
 
 const initialUser = {email: '', password: '', username: ''}
 const Registration = () => {
@@ -35,6 +37,8 @@ const Registration = () => {
     };
 
     return (
+        <div>
+            
         <Row className="register">
             <Col sm='12' md={{size: 4, offset: 4}}>
                 <div>
@@ -64,9 +68,14 @@ const Registration = () => {
                                 placeholder="Enter your Password" />
                             </FormGroup>
                             <Button color="primary" onClick={signUp}>Sign Up!</Button>
+                            <div className="mt-3">
+                                <span>Already have an account? </span>
+                            <Link to="/login">Login!</Link>
+                            </div>
                 </div>
             </Col>
-        </Row>
+        </Row><Particle/>
+        </div>
     );
     
 };

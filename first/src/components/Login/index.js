@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify"; 
 import { Link, useNavigate } from "react-router-dom";
 import { storeUser } from "../../helpers";
+import Particle from "../Particle";
 
 const initialUser = { password: "", identifier: ""};
 
@@ -64,7 +65,7 @@ const Login = () => {
                     </h6>
                     
                 </div>
-        </Col>
+        </Col><Particle/>
     </Row>;
         
     
