@@ -4,13 +4,14 @@ import Login from "./components/Login";
 import Registration from "./components/Registration";
 import Logout from "./components/Logout";
 import { ToastContainer, toast } from "react-toastify";
-
+import Particle from "./components/Particle";
 
 
 function App() {
   const notify = () => toast("ez");
   return (
     <>
+    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />

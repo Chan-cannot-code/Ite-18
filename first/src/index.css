@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "VCR OSD Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #020024;
@@ -10,9 +8,78 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "VCR OSD Mono", monospace;
 }
+/*home forecast*/
+
+.weather-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.weather-card {
+  margin-top: 50px;
+  background-color: rgba(61, 59, 59, 0.199);
+  border: 2px solid #54a832;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 470px;
+}
+
+.weather-card__current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.weather-details {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.weather-icon {
+  text-align: center;
+}
+
+.icon-large {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-card__next-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.weather-next-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.weather-next-icon {
+  text-align: center;
+}
+
+.icon-next-large {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/*end of weather forecast style*/
+
 
 /* mao ni ang navigation style */
 .custom-nav .collapse{
