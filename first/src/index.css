@@ -11,6 +11,17 @@ code {
   font-family: "VCR OSD Mono", monospace;
 }
 /*home forecast*/
+.music-controls {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  z-index: 10;
+}
+
+.music-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .weather-container {
   display: flex;
