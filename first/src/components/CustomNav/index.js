@@ -17,7 +17,7 @@ const CostumNav = () => {
           
         <Navbar color="light" light expand="md">
             <NavbarBrand href="/" className="mr-auto">
-            ITE-18 Strapi Authentication 
+            ITE-18 Strapi Authentication | Weather API Integration
             </NavbarBrand>
           <NavbarToggler onClick={toggle} className="mr-2" />
           <Collapse isOpen={isOpen} navbar>
